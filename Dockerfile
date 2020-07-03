@@ -1,7 +1,8 @@
 FROM jeanblanchard/alpine-glibc:latest
 
-ENV SNELL_VERSION="2.0.1"
-# ENV SNELL_URI="https://github.com/surge-networks/snell/releases/download/2.0.0/snell-server-v2.0.0-linux-amd64.zip"
+ARG SNELL_VERSION="2.0.1"
+# ARG SNELL_URI="https://github.com/surge-networks/snell/releases/download/2.0.0/snell-server-v2.0.0-linux-amd64.zip"
+
 ENV TZ=Asia/Shanghai
 
 WORKDIR /tmp
